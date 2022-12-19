@@ -10,4 +10,11 @@ export const createPages: GatsbyNode["createPages"] = async ({
       "isPermanent": true
     }
   )
+  actions.createRedirect(
+    {
+      "fromPath":"/google/*",
+      "toPath": "https://google.com/search?q=*",
+      "isPermanent": true
+    }
+  )
 }

@@ -23,8 +23,12 @@ export const createPages: GatsbyNode["createPages"] = async ({
 }`}
       </pre>
       <p>Works: <a href="/from/gatsby-plugin-fastify">/from/gatsby-plugin-fastify</a> -> /to/?q=gatsby-plugin-fastify</p>      
+      <p>Works: <a href="/google/gatsby-plugin-fastify" target="_blank">/google/gatsby-plugin-fastify</a> -> https://google.com/search/?q=gatsby-plugin-fastify</p>      
       <p>
         Crashes: <a href="/from/而且">/from/而且</a> -> Server crashes and 'site cannot be reached'. 
+      </p>
+      <p>
+        Crashes: <a href="/google/而且">/google/而且</a> -> Server crashes and 'site cannot be reached'. 
       </p>
     </main>
   )
